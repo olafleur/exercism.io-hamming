@@ -18,17 +18,14 @@ class HammingSpecs extends FlatSpec with Matchers {
   }
 
   it should "give small hamming distance in middle somewhere" in {
-    pending
     Hamming.compute("GGACG", "GGTCG") should be (1)
   }
 
   it should "give a larger distance" in {
-    pending
     Hamming.compute("ACCAGGG", "ACTATGG") should be (2)
   }
 
   it should "ignore extra length on other strand when longer" in {
-    pending
     Hamming.compute("AAACTAGGGG", "AGGCTAGCGGTAGGAC") should be (3)
   }
 
