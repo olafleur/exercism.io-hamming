@@ -30,7 +30,6 @@ class HammingSpecs extends FlatSpec with Matchers {
   }
 
   it should "ignore extra length on original strand when longer" in {
-    pending
     Hamming.compute("GACTACGGACAGGGTAGGGAAT", "GACATCGCACACC") should be (5)
   }
 }
