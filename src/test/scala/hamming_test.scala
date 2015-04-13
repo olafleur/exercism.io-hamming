@@ -14,7 +14,6 @@ class HammingSpecs extends FlatSpec with Matchers {
   }
 
   it should "give hamming distance in off by one strand" in {
-    pending
     Hamming.compute("GGACGGATTCTG", "AGGACGGATTCT") should be (9)
   }
 
